@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  .node {
+    fill: #FFF;
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
+
+  .node text {
+    pointer-events: none;
+    font: 10px sans-serif;
+  }
+
+  .node.prototype {
+    fill: #84C8C3;
+  }
+
+  .node.object {
+    fill: #DBD168;
+  }
+
+  .node.function {
+    fill: #F2B08B;
+  }
+
+  .link {
+    stroke: #999;
+    stroke-opacity: .6;
+  }
+
+  #container {
+    width: 800px;
+    height: 600px;
+  }
+
+</style>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js"></script>
+  <div id='container'></div>
+  <script src="sandbox.js"></script>
+</script>
+</body>
+</html>
